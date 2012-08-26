@@ -51,6 +51,29 @@ And then setup a couple of pieces of information about you, the issuer, in the r
   end
 ```
 
+This would create JSON that looked like this:
+
+```javascript
+{
+  :recipient=>"sha256$56ad781803f326ddab2f5eaa270964d40d43a11abd193fdb121334f1e653263a", 
+  :salt=>"c1be0242548c455c654e720ae304e5b6", 
+  :issued_on=>"2012-08-26", 
+  :badge=>{
+    :version=>"0.5.0", 
+    :name=>"Completed Level 1 of Something", 
+    :image=>"http://www.codeschool.com/badges/1", 
+    :description=>"Completed Level 1 of Something", 
+    :criteria=>"http://www.codeschool.com/badges/1/criteria", 
+    :issuer=>{
+      :origin=>"http://www.codeschool.com", 
+      :name=>"Code School", 
+      :org=>nil, 
+      :contact=>nil
+    }
+  }
+}
+```
+
 ## Contributing
 
 1. Fork it
