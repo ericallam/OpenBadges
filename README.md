@@ -1,5 +1,15 @@
 # OpenBadges
 
+[![Gem Version](http://img.shields.io/gem/v/open_badges.svg)][gem]
+[![Build Status](http://img.shields.io/travis/ericallam/open_badges.svg)][travis]
+[![Dependency Status](http://img.shields.io/gemnasium/ericallam/open_badges.svg)][gemnasium]
+[![Code Climate](http://img.shields.io/codeclimate/github/ericallam/open_badges.svg)][codeclimate]
+
+[gem]: http://rubygems.org/gems/open_badges
+[travis]: https://travis-ci.org/ericallam/OpenBadges
+[gemnasium]: https://gemnasium.com/ericallam/OpenBadges
+[codeclimate]: https://codeclimate.com/github/ericallam/OpenBadges
+
 Provides some objects to make it easy to work with the OpenBadges [issuer API](https://github.com/mozilla/openbadges/wiki/Issuer-API). Right
 now this only includes the ability to create the [Assertion JSON](https://github.com/mozilla/openbadges/wiki/Assertions) necessary when responding
 to a assertion request from OpenBadges.
@@ -55,19 +65,19 @@ This would create JSON that looked like this:
 
 ```javascript
 {
-  :recipient=>"sha256$56ad781803f326ddab2f5eaa270964d40d43a11abd193fdb121334f1e653263a", 
-  :salt=>"c1be0242548c455c654e720ae304e5b6", 
-  :issued_on=>"2012-08-26", 
+  :recipient=>"sha256$56ad781803f326ddab2f5eaa270964d40d43a11abd193fdb121334f1e653263a",
+  :salt=>"c1be0242548c455c654e720ae304e5b6",
+  :issued_on=>"2012-08-26",
   :badge=>{
-    :version=>"0.5.0", 
-    :name=>"Completed Level 1 of Something", 
-    :image=>"http://www.codeschool.com/badges/1", 
-    :description=>"Completed Level 1 of Something", 
-    :criteria=>"http://www.codeschool.com/badges/1/criteria", 
+    :version=>"0.5.0",
+    :name=>"Completed Level 1 of Something",
+    :image=>"http://www.codeschool.com/badges/1",
+    :description=>"Completed Level 1 of Something",
+    :criteria=>"http://www.codeschool.com/badges/1/criteria",
     :issuer=>{
-      :origin=>"http://www.codeschool.com", 
-      :name=>"Code School", 
-      :org=>nil, 
+      :origin=>"http://www.codeschool.com",
+      :name=>"Code School",
+      :org=>nil,
       :contact=>nil
     }
   }
