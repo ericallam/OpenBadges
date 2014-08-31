@@ -19,6 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "activesupport", "~> 3.0"
 
-  gem.add_development_dependency "rspec", "2.11.0"
+  gem.add_development_dependency "rspec", "2.14.0"
   gem.add_development_dependency "timecop", "0.4.5"
 end
