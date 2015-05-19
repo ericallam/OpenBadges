@@ -6,19 +6,20 @@ require 'open_badges/version'
 Gem::Specification.new do |gem|
   gem.name          = "open_badges"
   gem.version       = OpenBadges::VERSION
+  gem.license       = "MIT"
   gem.authors       = ["Eric Allam"]
-  gem.email         = ["rubymaverick@gmail.com"]
+  gem.email         = ["eallam@me.com"]
   gem.description   = %q{Work with OpenBadges Issuer API}
   gem.summary       = %q{Work with OpenBadges Issuer API}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/ericallam/OpenBadges"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency "activesupport", "~> 3.0"
+  gem.add_dependency "activesupport", ">= 3.0","< 5.0"
 
-  gem.add_development_dependency "rspec", "2.11.0"
+  gem.add_development_dependency "rspec", "2.14.0"
   gem.add_development_dependency "timecop", "0.4.5"
 end
